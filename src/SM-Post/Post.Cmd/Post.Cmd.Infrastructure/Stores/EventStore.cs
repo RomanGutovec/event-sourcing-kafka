@@ -22,11 +22,11 @@ public class EventStore : IEventStore
 
     {
         var eventStream = await _eventStoreRepository.FindByAggregateId(aggregateId);
-        if (expectedVersion == -1 && eventStream[^1].Version != expectedVersion)
+        if (expectedVersion == -1 && eventStream.Any() && eventStream[^1].Version != expectedVersion)
             throw new ConcurrencyException();
 
-        if (eventStream == null || !eventStream.Any())
-            throw new AggregateNotFoundException($"Post with id {aggregateId} was not found");
+        // if (eventStream == null || !eventStream.Any())
+        //     throw new AggregateNotFoundException($"Post with id {aggregateId} was not found");
 
         var version = expectedVersion;
         foreach (var @event in events)

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {}
+    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {}
   },
   "projects": {
-    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
+    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
+        "projectUniqueName": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
         "projectName": "CQRS.Core",
-        "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
-        "packagesPath": "C:\\Users\\r.hutavets\\.nuget\\packages\\",
-        "outputPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\obj\\",
+        "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
+        "packagesPath": "C:\\Users\\Raman\\.nuget\\packages\\",
+        "outputPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\r.hutavets\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Raman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,26 +56,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -22,3 +22,15 @@ C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\
 C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\refint\CQRS.Core.dll
 C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.pdb
 C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\ref\CQRS.Core.dll
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\bin\Debug\net7.0\CQRS.Core.deps.json
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\bin\Debug\net7.0\CQRS.Core.dll
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\bin\Debug\net7.0\CQRS.Core.pdb
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.csproj.AssemblyReference.cache
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.AssemblyInfoInputs.cache
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.AssemblyInfo.cs
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.csproj.CoreCompileInputs.cache
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.dll
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\refint\CQRS.Core.dll
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.pdb
+D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\ref\CQRS.Core.dll

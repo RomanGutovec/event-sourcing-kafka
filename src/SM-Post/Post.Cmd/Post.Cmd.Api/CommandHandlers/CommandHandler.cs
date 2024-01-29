@@ -1,7 +1,8 @@
 using CQRS.Core.Handlers;
+using Post.Cmd.Api.Commands;
 using Post.Cmd.Domain.Aggregates;
 
-namespace Post.Cmd.Api.Commands;
+namespace Post.Cmd.Api.CommandHandlers;
 
 public class CommandHandler : ICommandHandler
 {

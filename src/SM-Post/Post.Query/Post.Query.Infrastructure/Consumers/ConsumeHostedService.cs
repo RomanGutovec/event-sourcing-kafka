@@ -16,18 +16,19 @@ public class ConsumerHostedService : IHostedService
         _logger = logger;
         _serviceProvider = serviceProvider;
     }
+
     public Task StartAsync(CancellationToken cancellationToken)
     {
         _logger.LogInformation("Event consumer service running");
 
-        using (var scope = _serviceProvider.CreateScope())
+        Task.Run(async () =>
         {
+            using var scope = _serviceProvider.CreateScope();
             var eventConsumer = scope.ServiceProvider.GetRequiredService<IEventConsumer>();
             var topic = Environment.GetEnvironmentVariable("KAFKA_TOPIC");
 
-             //Task.Run( () =>  eventConsumer.Consume(topic), cancellationToken);
-            eventConsumer.Consume(topic);
-        }
+            await Task.Run(() => eventConsumer.Consume(topic), cancellationToken);
+        }, cancellationToken);
 
         return Task.CompletedTask;
     }

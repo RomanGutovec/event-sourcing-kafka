@@ -22,7 +22,7 @@ public class EventStore : IEventStore
 
     {
         var eventStream = await _eventStoreRepository.FindByAggregateId(aggregateId);
-        if (expectedVersion == -1 && eventStream.Any() && eventStream[^1].Version != expectedVersion)
+        if (expectedVersion != -1 && eventStream[^1].Version != expectedVersion)
             throw new ConcurrencyException();
 
         // if (eventStream == null || !eventStream.Any())
@@ -31,7 +31,7 @@ public class EventStore : IEventStore
         var version = expectedVersion;
         foreach (var @event in events)
         {
-            @event.Version = version++;
+            @event.Version = ++version;
             var eventModel = new EventModel()
             {
                 TimeStamp = DateTime.Now,

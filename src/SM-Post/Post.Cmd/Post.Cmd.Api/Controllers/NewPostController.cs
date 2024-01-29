@@ -9,13 +9,13 @@ namespace Post.Cmd.Api.Controllers;
 [Route("api/v1/[controller]")]
 public class NewPostController : ControllerBase
 {
-    private readonly ILogger<NewPostController> logger;
-    private readonly ICommandDispatcher commandDispatcher;
+    private readonly ILogger<EditMessageController> _logger;
+    private readonly ICommandDispatcher _commandDispatcher;
 
-    public NewPostController(ILogger<NewPostController> logger, ICommandDispatcher commandDispatcher)
+    public NewPostController(ILogger<EditMessageController> logger, ICommandDispatcher commandDispatcher)
     {
-        this.logger = logger;
-        this.commandDispatcher = commandDispatcher;
+        _logger = logger;
+        _commandDispatcher = commandDispatcher;
     }
 
     [HttpPost]
@@ -25,8 +25,8 @@ public class NewPostController : ControllerBase
 
         try
         {
-            await commandDispatcher.SendAsync(command);
-            return StatusCode(StatusCodes.Status201Created, new NewPostResponse()
+            await _commandDispatcher.SendAsync(command);
+            return StatusCode(StatusCodes.Status201Created, new NewPostResponse
             {
                 Id = command.Id,
                 Message = "New post creation request completed successfully."
@@ -34,8 +34,8 @@ public class NewPostController : ControllerBase
         }
         catch (InvalidOperationException ex)
         {
-            logger.LogWarning(ex, $"Bad request.");
-            return BadRequest(new NewPostResponse()
+            _logger.LogWarning(ex, $"Bad request.");
+            return BadRequest(new NewPostResponse
             {
                 Message = ex.Message
             });
@@ -43,8 +43,8 @@ public class NewPostController : ControllerBase
         catch (Exception ex)
         {
             var message = $"An error occurred while processing the command: {command.Id}";
-            logger.LogError(ex, message);
-            return StatusCode(StatusCodes.Status500InternalServerError, new NewPostResponse()
+            _logger.LogError(ex, message);
+            return StatusCode(StatusCodes.Status500InternalServerError, new NewPostResponse
             {
                 Id = command.Id,
                 Message = message

@@ -84,7 +84,7 @@ public class PostAggregate : AggregateRoot
             throw new InvalidOperationException("You cannot edit a comment of an inactive post.");
         }
 
-        if (_comments[commentId].Item2.Equals(userName, StringComparison.CurrentCultureIgnoreCase))
+        if (!_comments[commentId].Item2.Equals(userName, StringComparison.CurrentCultureIgnoreCase))
         {
             throw new InvalidOperationException("You cannot edit a comment of another user.");
         }
@@ -117,7 +117,7 @@ public class PostAggregate : AggregateRoot
             throw new InvalidOperationException("You cannot remove message of an inactive post.");
         }
 
-        if (_comments[commentId].Item2.Equals(userName, StringComparison.CurrentCultureIgnoreCase))
+        if (!_comments[commentId].Item2.Equals(userName, StringComparison.CurrentCultureIgnoreCase))
         {
             throw new InvalidOperationException("You cannot remove a comment of another user.");
         }
@@ -142,7 +142,7 @@ public class PostAggregate : AggregateRoot
             throw new InvalidOperationException("The post has already been removed.");
         }
 
-        if (_author.Equals(userName, StringComparison.CurrentCultureIgnoreCase))
+        if (!_author.Equals(userName, StringComparison.CurrentCultureIgnoreCase))
             throw new InvalidOperationException("You cannot delete a post that was made by someone else.");
 
         RaiseEvent(new PostRemovedEvent()

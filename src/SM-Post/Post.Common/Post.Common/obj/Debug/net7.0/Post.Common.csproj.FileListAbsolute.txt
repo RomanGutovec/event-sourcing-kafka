@@ -43,3 +43,4 @@ D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Common\Post.Common\o
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Common\Post.Common\obj\Debug\net7.0\refint\Post.Common.dll
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Common\Post.Common\obj\Debug\net7.0\Post.Common.pdb
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Common\Post.Common\obj\Debug\net7.0\ref\Post.Common.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Common\Post.Common\obj\Debug\net7.0\Post.Common.sourcelink.json

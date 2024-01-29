@@ -53,3 +53,4 @@ D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Inf
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Infrastructure\obj\Debug\net7.0\refint\Post.Query.Infrastructure.dll
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Infrastructure\obj\Debug\net7.0\Post.Query.Infrastructure.pdb
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Infrastructure\obj\Debug\net7.0\ref\Post.Query.Infrastructure.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Infrastructure\obj\Debug\net7.0\Post.Query.Infrastructure.sourcelink.json

@@ -34,3 +34,4 @@ D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.
 D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\refint\CQRS.Core.dll
 D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.pdb
 D:\Mentoring\Projects\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\ref\CQRS.Core.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\CQRS-ES\CQRS.Core\obj\Debug\net7.0\CQRS.Core.sourcelink.json

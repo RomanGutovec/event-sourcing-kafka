@@ -440,3 +440,9 @@ D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\obj\Debug\net7.0\Post.Query.Api.pdb
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\obj\Debug\net7.0\Post.Query.Api.genruntimeconfig.cache
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\obj\Debug\net7.0\ref\Post.Query.Api.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\obj\Debug\net7.0\Post.Query.Api.sourcelink.json
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Query\Post.Query.Api\obj\Debug\net7.0\Post.Query.Api.MvcApplicationPartsAssemblyInfo.cs

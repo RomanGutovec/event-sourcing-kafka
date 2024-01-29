@@ -32,12 +32,12 @@ public class EventJsonConverter : JsonConverter<BaseEvent>
         return typeDiscriminator switch
         {
             nameof(PostCreatedEvent) => JsonSerializer.Deserialize<PostCreatedEvent>(rawJson),
-            nameof(MessageUpdatedEvent) => JsonSerializer.Deserialize<MessageUpdatedEvent>(rawJson, options),
-            nameof(PostLikedEvent) => JsonSerializer.Deserialize<PostLikedEvent>(rawJson, options),
-            nameof(CommentAddedEvent) => JsonSerializer.Deserialize<CommentAddedEvent>(rawJson, options),
-            nameof(CommentUpdatedEvent) => JsonSerializer.Deserialize<CommentUpdatedEvent>(rawJson, options),
-            nameof(CommentRemovedEvent) => JsonSerializer.Deserialize<CommentRemovedEvent>(rawJson, options),
-            nameof(PostRemovedEvent) => JsonSerializer.Deserialize<PostRemovedEvent>(rawJson, options),
+            nameof(MessageUpdatedEvent) => JsonSerializer.Deserialize<MessageUpdatedEvent>(rawJson),
+            nameof(PostLikedEvent) => JsonSerializer.Deserialize<PostLikedEvent>(rawJson),
+            nameof(CommentAddedEvent) => JsonSerializer.Deserialize<CommentAddedEvent>(rawJson),
+            nameof(CommentUpdatedEvent) => JsonSerializer.Deserialize<CommentUpdatedEvent>(rawJson),
+            nameof(CommentRemovedEvent) => JsonSerializer.Deserialize<CommentRemovedEvent>(rawJson),
+            nameof(PostRemovedEvent) => JsonSerializer.Deserialize<PostRemovedEvent>(rawJson),
             _ => throw new JsonException($"{typeDiscriminator} is not supported yet.")
         };
     }

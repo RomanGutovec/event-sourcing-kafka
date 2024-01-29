@@ -49,3 +49,4 @@ D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Domain\
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Domain\obj\Debug\net7.0\refint\Post.Cmd.Domain.dll
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Domain\obj\Debug\net7.0\Post.Cmd.Domain.pdb
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Domain\obj\Debug\net7.0\ref\Post.Cmd.Domain.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Domain\obj\Debug\net7.0\Post.Cmd.Domain.sourcelink.json

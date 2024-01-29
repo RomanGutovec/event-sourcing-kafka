@@ -229,3 +229,4 @@ D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Api\obj
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Api\obj\Debug\net7.0\Post.Cmd.Api.pdb
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Api\obj\Debug\net7.0\Post.Cmd.Api.genruntimeconfig.cache
 D:\Mentoring\Projects\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Api\obj\Debug\net7.0\ref\Post.Cmd.Api.dll
+C:\RamanWork\Mentoring\Projects\.net\event-sourcing-kafka\src\SM-Post\Post.Cmd\Post.Cmd.Api\obj\Debug\net7.0\Post.Cmd.Api.sourcelink.json

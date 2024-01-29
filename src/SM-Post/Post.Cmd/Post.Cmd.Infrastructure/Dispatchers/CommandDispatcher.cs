@@ -5,7 +5,7 @@ namespace Post.Cmd.Infrastructure.Dispatchers;
 
 public class CommandDispatcher : ICommandDispatcher
 {
-    private readonly Dictionary<Type, Func<BaseCommand, Task>?> _handlers = new();
+    private readonly Dictionary<Type, Func<BaseCommand, Task>> _handlers = new();
 
     public void RegisterHandler<T>(Func<T, Task> handler) where T : BaseCommand
     {
@@ -20,6 +20,6 @@ public class CommandDispatcher : ICommandDispatcher
         if (!_handlers.TryGetValue(command.GetType(), out Func<BaseCommand, Task> handler))
             throw new NullReferenceException("No command handler registered.");
 
-        await handler?.Invoke(command);
+        await handler.Invoke(command);
     }
 }

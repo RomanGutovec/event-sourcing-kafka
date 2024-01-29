@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj": {}
+    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
+    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
+        "projectUniqueName": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
         "projectName": "CQRS.Core",
-        "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
-        "packagesPath": "C:\\Users\\Raman\\.nuget\\packages\\",
-        "outputPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\obj\\",
+        "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
+        "packagesPath": "C:\\Users\\r.hutavets\\.nuget\\packages\\",
+        "outputPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Raman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\r.hutavets\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,26 +60,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj": {
+    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj",
+        "projectUniqueName": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj",
         "projectName": "Post.Common",
-        "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj",
-        "packagesPath": "C:\\Users\\Raman\\.nuget\\packages\\",
-        "outputPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\obj\\",
+        "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj",
+        "packagesPath": "C:\\Users\\r.hutavets\\.nuget\\packages\\",
+        "outputPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Raman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\r.hutavets\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +111,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
-                "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj"
+              "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
+                "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj"
               }
             }
           }
@@ -115,26 +137,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj": {
+    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj",
+        "projectUniqueName": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj",
         "projectName": "Post.Query.Domain",
-        "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj",
-        "packagesPath": "C:\\Users\\Raman\\.nuget\\packages\\",
-        "outputPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\obj\\",
+        "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj",
+        "packagesPath": "C:\\Users\\r.hutavets\\.nuget\\packages\\",
+        "outputPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Raman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\r.hutavets\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,8 +188,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj": {
-                "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj"
+              "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj": {
+                "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj"
               }
             }
           }
@@ -174,26 +214,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj": {
+    "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
+        "projectUniqueName": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
         "projectName": "Post.Query.Infrastructure",
-        "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Raman\\.nuget\\packages\\",
-        "outputPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\obj\\",
+        "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\r.hutavets\\.nuget\\packages\\",
+        "outputPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Raman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\r.hutavets\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -207,11 +265,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj": {
-                "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj"
+              "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj": {
+                "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Common\\Post.Common\\Post.Common.csproj"
               },
-              "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj": {
-                "projectPath": "D:\\Mentoring\\Projects\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj"
+              "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj": {
+                "projectPath": "C:\\RamanWork\\Mentoring\\Projects\\.net\\event-sourcing-kafka\\src\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj"
               }
             }
           }
@@ -254,12 +312,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

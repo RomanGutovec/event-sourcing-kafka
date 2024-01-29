@@ -1,4 +1,6 @@
-namespace Post.Cmd.Api.Commands;
+using Post.Cmd.Api.Commands;
+
+namespace Post.Cmd.Api.CommandHandlers;
 
 public interface ICommandHandler
 {

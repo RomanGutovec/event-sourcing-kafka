@@ -13,18 +13,18 @@ using Post.Query.Infrastructure.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Action<DbContextOptionsBuilder> configureDbContext = o => o.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("SocialMediaConnectionString"));
+builder.Services.AddDbContext<PostDbContext>(configureDbContext);
+builder.Services.AddSingleton(new DatabaseContextFactory(configureDbContext));
 
-builder.Services.AddDbContext<PostDbContext>(o => o
-    .UseLazyLoadingProxies()
-    .UseSqlServer(builder.Configuration.GetConnectionString("SocialMediaConnectionString")));
 
-builder.Services.AddScoped<IPostDbContext>(provider => provider.GetRequiredService<PostDbContext>());
+builder.Services.AddScoped<IPostDbContext, PostDbContext>();
 
-builder.Services.AddScoped<IQueryHandler, QueryHandler>();
+builder.Services.AddTransient<IQueryHandler, QueryHandler>();
 
 builder.Services.Configure<ConsumerConfig>(builder.Configuration.GetSection(nameof(ConsumerConfig)));
-builder.Services.AddScoped<IEventHandler, Post.Query.Infrastructure.Handlers.EventHandler>();
-builder.Services.AddScoped<IEventConsumer, EventConsumer>();
+builder.Services.AddTransient<IEventHandler, Post.Query.Infrastructure.Handlers.EventHandler>();
+builder.Services.AddTransient<IEventConsumer, EventConsumer>();
 
 var dispatcher = new QueryDispatcher();
 builder.Services.AddSingleton<IQueryDispatcher<PostEntity>>(dispatcher);

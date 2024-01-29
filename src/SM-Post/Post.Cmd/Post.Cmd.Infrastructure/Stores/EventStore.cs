@@ -25,9 +25,6 @@ public class EventStore : IEventStore
         if (expectedVersion != -1 && eventStream[^1].Version != expectedVersion)
             throw new ConcurrencyException();
 
-        // if (eventStream == null || !eventStream.Any())
-        //     throw new AggregateNotFoundException($"Post with id {aggregateId} was not found");
-
         var version = expectedVersion;
         foreach (var @event in events)
         {
@@ -57,5 +54,16 @@ public class EventStore : IEventStore
             throw new AggregateNotFoundException($"Post with id {aggregateId} was not found");
 
         return eventStream.OrderBy(x => x.Version).Select(x => x.EventData).ToList();
+    }
+
+    public async Task<List<Guid>> GetAggregateIdsAsync()
+    {
+        var eventStream = await _eventStoreRepository.FindAllAsync();
+        if (eventStream is null || !eventStream.Any())
+        {
+            throw new NullReferenceException("Could not retrieve event stream.");
+        }
+
+        return eventStream.Select(x => x.AggregateIdentifier).Distinct().ToList();
     }
 }

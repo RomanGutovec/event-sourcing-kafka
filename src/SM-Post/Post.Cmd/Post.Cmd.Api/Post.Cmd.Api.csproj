@@ -4,6 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,6 +12,12 @@
       <ProjectReference Include="..\..\Post.Common\Post.Common\Post.Common.csproj" />
       <ProjectReference Include="..\Post.Cmd.Domain\Post.Cmd.Domain.csproj" />
       <ProjectReference Include="..\Post.Cmd.Infrastructure\Post.Cmd.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>

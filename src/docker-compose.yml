@@ -1,0 +1,108 @@
+version: "3.4"
+
+services:
+  post.cmd:
+    container_name: post.cmd
+    build:
+      context: .
+      dockerfile: /SM-Post/Post.Cmd/Post.Cmd.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "KAFKA_TOPIC=SocialMediaPostEvents"
+      - "MongoDbConfig:ConnectionString=mongodb://mongo.db:27017"
+      - "MongoDbConfig:Database=socialMedia"
+      - "MongoDbConfig:Collection=eventStore"
+      - "ProducerConfig:BootstrapServers=kafka:9092"
+    depends_on:
+      - mongo.db
+      - kafka
+    ports:
+      - "5010:80"
+    
+  post.query:
+      container_name: post.query
+      build:
+        context: .
+        dockerfile: /SM-Post/Post.Query/Post.Query.Api/Dockerfile
+      environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - "KAFKA_TOPIC=SocialMediaPostEvents"
+        - "ConsumerConfig:GroupId=SM_Consumer"
+        - "ConsumerConfig:BootstrapServers=kafka:9092"
+        - "ConsumerConfig:EnableAutoCommit=false"
+        - "ConsumerConfig:AutoOffsetReset=Earliest"
+        - "ConsumerConfig:AllowAutoCreateTopics=true"
+        - "ConnectionStrings__SocialMediaConnectionString=Server=sqlserver.db,1433;Database=SocialMedia;User Id=sa;Password=Admin123!;Encrypt=True;TrustServerCertificate=True;"
+      depends_on:
+        - sqlserver.db
+      ports:
+        - "5011:80"
+  
+  zookeeper:
+    image: bitnami/zookeeper
+    restart: always
+    ports:
+      - "2181:2181"
+    volumes:
+      - "zookeeper_data:/bitnami"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: bitnami/kafka
+    ports:
+      - "9092:9092"
+    restart: always
+    volumes:
+      - "kafka_data:/bitnami"
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_MESSAGE_MAX_BYTES=20000000
+    depends_on:
+      - zookeeper
+  sqlserver.db:
+    container_name: sqlserver.db
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Admin123!"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    restart: always
+  mongo.db:
+    container_name: mongo.db
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongodb_data_container:/data/db"
+    restart: always
+  
+  #############################
+  #mongoclient can be used any 
+  #############################   
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express:latest
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo-container
+    depends_on:
+      - mongo.db
+    restart: unless-stopped
+
+volumes:
+  zookeeper_data:
+    driver: local
+  kafka_data:
+    driver: local
+  mongodb_data_container:
+    driver: local
+
+networks:
+  default:
+    name: my-docker-network

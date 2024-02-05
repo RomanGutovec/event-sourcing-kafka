@@ -18,25 +18,25 @@ services:
       - kafka
     ports:
       - "5010:80"
-    
+  
   post.query:
-      container_name: post.query
-      build:
-        context: .
-        dockerfile: /SM-Post/Post.Query/Post.Query.Api/Dockerfile
-      environment:
-        - ASPNETCORE_ENVIRONMENT=Development
-        - "KAFKA_TOPIC=SocialMediaPostEvents"
-        - "ConsumerConfig:GroupId=SM_Consumer"
-        - "ConsumerConfig:BootstrapServers=kafka:9092"
-        - "ConsumerConfig:EnableAutoCommit=false"
-        - "ConsumerConfig:AutoOffsetReset=Earliest"
-        - "ConsumerConfig:AllowAutoCreateTopics=true"
-        - "ConnectionStrings__SocialMediaConnectionString=Server=sqlserver.db,1433;Database=SocialMedia;User Id=sa;Password=Admin123!;Encrypt=True;TrustServerCertificate=True;"
-      depends_on:
-        - sqlserver.db
-      ports:
-        - "5011:80"
+    container_name: post.query
+    build:
+      context: .
+      dockerfile: /SM-Post/Post.Query/Post.Query.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "KAFKA_TOPIC=SocialMediaPostEvents"
+      - "ConsumerConfig:GroupId=SM_Consumer"
+      - "ConsumerConfig:BootstrapServers=kafka:9092"
+      - "ConsumerConfig:EnableAutoCommit=false"
+      - "ConsumerConfig:AutoOffsetReset=Earliest"
+      - "ConsumerConfig:AllowAutoCreateTopics=true"
+      - "ConnectionStrings__SocialMediaConnectionString=Server=sqlserver.db,1433;Database=SocialMedia;User Id=sa;Password=Admin123!;Encrypt=True;TrustServerCertificate=True;"
+    depends_on:
+      - sqlserver.db
+    ports:
+      - "5011:80"
   
   zookeeper:
     image: bitnami/zookeeper
@@ -62,6 +62,17 @@ services:
       - KAFKA_CFG_MESSAGE_MAX_BYTES=20000000
     depends_on:
       - zookeeper
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    restart: "no"
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: kafka:9092
+      JVM_OPTS: -Xms32M -Xmx64M
+      SERVER_SERVLET_CONTEXTPATH: "/"
+    depends_on:
+      - kafka
   sqlserver.db:
     container_name: sqlserver.db
     image: "mcr.microsoft.com/mssql/server:2022-latest"
